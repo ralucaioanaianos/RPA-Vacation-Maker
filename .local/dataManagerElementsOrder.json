@@ -1,0 +1,111 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "departure_flight_details&Sequence_19",
+        "miau&Sequence_19",
+        "departure_flight_time&Sequence_19",
+        "departure_flight_price&Sequence_19",
+        "departure_flight_link&Sequence_19",
+        "departure_flight_details&Sequence_15",
+        "miau&Sequence_15",
+        "departure_flight_time&Sequence_15",
+        "departure_flight_price&Sequence_15",
+        "miau&Sequence_8",
+        "emails_list&Sequence_8",
+        "arrival_date&Sequence_1",
+        "departure_date&Sequence_1",
+        "arrival_location&Sequence_1",
+        "departure_location&Sequence_1",
+        "invitation_text&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SearchHotel.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "hotel_link&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "arrival_location",
+        "departure_date",
+        "arrival_date"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ExtractEmailAddresses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "miau&Sequence_8",
+        "emails_list&Sequence_8"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ExtractDatafromInvitation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "invitation_text",
+        "departure_location",
+        "arrival_location",
+        "departure_date",
+        "arrival_date"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ExtractDepartureFlight.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "departure_flight_link&Sequence_12",
+        "departure_flight_details&Sequence_12",
+        "miau&Sequence_12",
+        "departure_flight_time&Sequence_12",
+        "departure_flight_price&Sequence_12"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "departure_location",
+        "arrival_location",
+        "departure_date"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ExtractArrivalFlight.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "departure_flight_details&Sequence_15",
+        "miau&Sequence_15",
+        "departure_flight_time&Sequence_15",
+        "departure_flight_price&Sequence_15"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "arrival_location",
+        "departure_location",
+        "arrival_date"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

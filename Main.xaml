@@ -1,0 +1,873 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="784.8,1858.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uasa="clr-namespace:UiPath.Activities.System.Arrays;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uisape="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.PDF.ExtractPDFText;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Activities.System.Arrays</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.PDF.ExtractPDFText</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.PDF</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="611.2,8676.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="invitation_text" />
+      <Variable x:TypeArguments="x:String" Name="departure_location" />
+      <Variable x:TypeArguments="x:String" Name="arrival_location" />
+      <Variable x:TypeArguments="x:String" Name="departure_date" />
+      <Variable x:TypeArguments="x:String" Name="arrival_date" />
+      <Variable x:TypeArguments="x:String" Name="email_content" />
+      <Variable x:TypeArguments="x:String" Name="arrival_flight_link" />
+      <Variable x:TypeArguments="x:String" Name="departure_flight_link" />
+      <Variable x:TypeArguments="scg:IList(x:String)" Name="emails_list" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="548.8,64.8" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="731.2,2046.4" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+          <ueab:ExcelProcessScopeX.Body>
+            <ActivityAction x:TypeArguments="ui:IExcelProcess">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="697.6,1920" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File EmailAddresses" sap:VirtualizedContainerService.HintSize="635.2,1668" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="Input\EmailAddresses.xlsx">
+                  <ueab:ExcelApplicationCard.Body>
+                    <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Addresses" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="601.6,1358.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="miau" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:RemoveDuplicatesX DisplayName="Remove Duplicates from EmailAddresses" sap:VirtualizedContainerService.HintSize="539.2,253.6" sap2010:WorkflowViewState.IdRef="RemoveDuplicatesX_1" Range="[Addresses.Sheet(&quot;Foaie1&quot;)]">
+                          <ueab:RemoveDuplicatesX.Columns>
+                            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
+                              <InArgument x:TypeArguments="x:String">Email Address</InArgument>
+                            </scg:List>
+                          </ueab:RemoveDuplicatesX.Columns>
+                        </ueab:RemoveDuplicatesX>
+                        <ui:CreateList x:TypeArguments="x:String" DisplayName="Create List of emails" sap:VirtualizedContainerService.HintSize="539.2,175.2" sap2010:WorkflowViewState.IdRef="CreateList`1_1" NewList="[emails_list]" />
+                        <ueab:ExcelForEachRowX DisplayName="For Each Excel Row in EmailAddresses" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="539.2,843.2" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Addresses.Sheet(&quot;Foaie1&quot;)]" SaveAfterEachRow="False">
+                          <ueab:ExcelForEachRowX.Body>
+                            <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                              <ActivityAction.Argument1>
+                                <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                              </ActivityAction.Argument1>
+                              <ActivityAction.Argument2>
+                                <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                              </ActivityAction.Argument2>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="505.6,627.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ueab:ReadCellValueX Cell="[CurrentRow.ByIndex(1)]" DisplayName="Read Cell Value from Column Email Address" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="443.2,200" sap2010:WorkflowViewState.IdRef="ReadCellValueX_1">
+                                  <ueab:ReadCellValueX.SaveTo>
+                                    <OutArgument x:TypeArguments="x:String">[miau]</OutArgument>
+                                  </ueab:ReadCellValueX.SaveTo>
+                                </ueab:ReadCellValueX>
+                                <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="443.2,175.2" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_1" ItemToAppend="[miau]" List="[emails_list]" />
+                                <ui:LogMessage DisplayName="Log Message Check Emails List Length" sap:VirtualizedContainerService.HintSize="443.2,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[emails_list.Count]" />
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelForEachRowX.Body>
+                        </ueab:ExcelForEachRowX>
+                      </Sequence>
+                    </ActivityAction>
+                  </ueab:ExcelApplicationCard.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ueab:ExcelApplicationCard>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="635.2,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Trace" Message="[&quot;Successfully extracted email addresses&quot;]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:LogMessage>
+              </Sequence>
+            </ActivityAction>
+          </ueab:ExcelProcessScopeX.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ueab:ExcelProcessScopeX>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="734.4,213.6" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="Error" Message="[&quot;Exception thrown during excel process&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="548.8,64.8" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <Sequence DisplayName="Extract Data from Invitation" sap:VirtualizedContainerService.HintSize="416,22.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uisape:ExtractPDFText ApplyOcr="{x:Null}" FilePassword="{x:Null}" OcrEngine="{x:Null}" DisplayName="Extract PDF Text" sap:VirtualizedContainerService.HintSize="433.6,130.4" sap2010:WorkflowViewState.IdRef="ExtractPDFText_1" PdfFile="[LocalResource.FromPath(&quot;Input\\Invitation.pdf&quot;)]" Text="[invitation_text]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uisape:ExtractPDFText>
+          <Assign sap:VirtualizedContainerService.HintSize="433.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[departure_location]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(invitation_text, "(?&lt;=leaving\s+from:\s+)\S+").Value]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign sap:VirtualizedContainerService.HintSize="433.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[arrival_location]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(invitation_text, "(?&lt;=Destination:\s+)\S+").Value]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign sap:VirtualizedContainerService.HintSize="433.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[departure_date]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(invitation_text, "(?&lt;=Departure\s+date:\s+)\S+").Value]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign sap:VirtualizedContainerService.HintSize="433.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_8">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[arrival_date]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(invitation_text, "(?&lt;=Arrival\s+date:\s+)\S+").Value]</InArgument>
+            </Assign.Value>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Assign>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Trace" Message="[&quot;Successfully extracted data from invitation: &quot; + departure_location + &quot; &quot; + arrival_location + &quot; &quot; + arrival_date + &quot; &quot; + arrival_location]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:LogMessage>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="419.2,213.6" sap2010:WorkflowViewState.IdRef="Catch`1_7">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Error" Message="[&quot;Exception thrown during pdf process&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="548.8,3561.6" sap2010:WorkflowViewState.IdRef="TryCatch_8">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Extract Departure Flight" sap:VirtualizedContainerService.HintSize="449.6,2996" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="d68d681a-a7f7-422a-99f0-f677d375cdd1" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,2739.2" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="sd:DataTable" Name="departure_flight_details" />
+                  <Variable x:TypeArguments="x:String" Name="miau" />
+                  <Variable x:TypeArguments="x:String" Name="departure_flight_time" />
+                  <Variable x:TypeArguments="x:String" Name="departure_flight_price" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'SPAN'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_21" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Text="[departure_location + &quot;[k(Enter)]&quot;]" Version="V3">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights" DesignTimeRectangle="385, 742, 17, 16" DesignTimeScaleFactor="1.25" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='ow60' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ow60' tag='path' type='' class='' aaname='' /&gt;" Guid="97732e9d-4360-4df6-a3ca-82ae7f645039" InformativeScreenshot="b5417ee82f74717772e6ca689be97352.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zboruri Google – Găsește zboruri ieftine și urmărește prețurile' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvTextArea="402, 672, 82, 17" CvTextArgument="Dus-intors" CvType="Text" DesignTimeRectangle="359, 660, 171, 45" FullSelectorArgument="&lt;webctrl class='VfPpkd-woaZLe' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='VfPpkd-woaZLe' tag='SPAN' type='' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_22" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Text="[arrival_location + &quot;[k(Enter)]&quot;]" Version="V3">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights?tfs=CBwQARoOagwIAxIIL20vMDk2Z20aDnIMCAMSCC9tLzA5NmdtQAFIAXABggELCP___________wGYAQE&amp;tfu=KgIIAw" CvTextArea="796, 805, 56, 17" CvTextArgument="Unde?" CvType="Text" DesignTimeRectangle="721, 780, 353, 70" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-label='Unde? ' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Unde? ' tag='INPUT' type='text' class='II2One j0Ppje zmMKJ LbIaRd' placeholder='Unde?' aaname='' /&gt;" Guid="82ce0f72-d128-42dc-9970-5fc2ca28d5a0" InformativeScreenshot="066f90e5e0431898936038d390e7978e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zboruri Google – Găsește zboruri ieftine și urmărește prețurile' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="751, 800, 30, 30" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;svg' parentid='i21' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='i21' tag='svg' class='IILp3 oTFJue LKTCxe NMm5M' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Dus-întors'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights?tfs=CBwQARodagwIAhIIL20vMHAyZ3FyDQgDEgkvbS8wOTk0OW0aHWoNCAMSCS9tLzA5OTQ5bXIMCAISCC9tLzBwMmdxQAFIAXABggELCP___________wGYAQE&amp;tfu=KgIIAw" CvElementArea="746, 493, 27, 29" CvType="ArrowButton" DesignTimeRectangle="755, 504, 12, 6" DesignTimeScaleFactor="1.25" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;svg' parentid='ow79' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='ow79' tag='svg' class='VfPpkd-t08AT-Bz112c-Bd00G' aaname='' /&gt;" Guid="7a39d6a2-82db-426d-82f9-e1d0f94507c7" InformativeScreenshot="cb1ccf7fc80e722df9dd37fe1eb35c7d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zboruri Google – Găsește zboruri ieftine și urmărește prețurile' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvTextArea="636, 496, 93, 20" CvTextArgument="Dus-intors" CvType="Text" DesignTimeRectangle="638, 489, 93, 35" ElementType="Text" FullSelectorArgument="&lt;webctrl id='i33' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='i33' tag='SPAN' type='' class='VfPpkd-uusGie-fmcmS' aaname='Dus-întors' check:innerText='Dus-întors' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Doar dus'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights?tfs=CBwQARodagwIAhIIL20vMHAyZ3FyDQgDEgkvbS8wOTk0OW0aHWoNCAMSCS9tLzA5OTQ5bXIMCAISCC9tLzBwMmdxQAFIAXABggELCP___________wGYAQE&amp;tfu=KgIIAw" CvTextArea="671, 627, 83, 18" CvTextArgument="Doar dus" CvType="Text" DesignTimeRectangle="618, 607, 173, 60" DesignTimeScaleFactor="1.25" ElementType="ListItem" FullSelectorArgument="&lt;webctrl aria-role='option' parentid='ow79' tabindex='-1' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='option' parentid='ow79' tabindex='-1' tag='LI' type='' class='MCs1Pd UbEQCe VfPpkd-OkbHre VfPpkd-OkbHre-SfQLQb-M1Soyc-bN97Pc VfPpkd-aJasdd-RWgCYc-wQNmvb  ib1Udf VfPpkd-rymPhb-ibnC6b VfPpkd-rymPhb-ibnC6b-OWXEXe-SfQLQb-M1Soyc-Bz112c VfPpkd-rymPhb-ibnC6b-OWXEXe-SfQLQb-Woal0c-RWgCYc' aaname='' check:innerText='Doar dus' /&gt;" Guid="58ac6014-38d7-4139-adb2-dd0802ebe57e" InformativeScreenshot="25e6d8b50456a598cdc081eaced8997a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zboruri Google – Găsește zboruri ieftine și urmărește prețurile' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvTextArea="671, 627, 83, 18" CvTextArgument="Doar dus" CvType="Text" DesignTimeRectangle="671, 627, 83, 18" ElementType="Text" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_20" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Text="[departure_date + &quot;[k(Enter)]&quot;]" Version="V3">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights?tfs=CBwQARodagwIAhIIL20vMHAyZ3FyDQgDEgkvbS8wOTk0OW0aHWoNCAMSCS9tLzA5OTQ5bXIMCAISCC9tLzBwMmdxQAFIAXABggELCP___________wGYAQE&amp;tfu=KgIIAw" CvTextArea="1152, 805, 68, 17" CvTextArgument="Plecare" CvType="Text" DesignTimeRectangle="1154, 781, 172, 68" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-label='Plecare' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Plecare' tag='INPUT' type='text' class='TP4Lpb eoY5cb j0Ppje' placeholder='Plecare' aaname='' /&gt;" Guid="02938ca8-cae3-4008-9713-b91bfd7c9f63" InformativeScreenshot="0a056009c2c3d673f7c17f1887c1be6d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zboruri Google – Găsește zboruri ieftine și urmărește prețurile' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvElementArea="1112, 796, 32, 33" CvType="Icon" DesignTimeRectangle="1114, 799, 30, 30" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='ow79' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ow79' tag='svg' type='' class=' NMm5M' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAE/SURBVFhH7ZfLasJAFIb7pq20xQtIcVVwo+Cib1C66DvUtm4UfAJFUAomXrqpaV146WpKNjl6xknB8YRMkqnEMh/8iwxz/vlgSCBnkBKMiMxpiQwtG56eX3lU8ffjrApKIlh4fpnjUcXfryqffhF7NIZq7Q4urvK/pXGDHdg1nkxF+yGkCGM/kC3ckKVJki+WwHVdcco+pMhk+k4W6Qh2U5AieC1UiY4EvUVGRCZUpNlq8+EkwY5YIpY9Ch2MAnZoFfmYOTBzPsXTDpU1rSKLxZJ/mDDr9XektT8RyVwXYLlaRVqLLTK0gq/GIa4hbE27SFyMiMx/EAkfjIIRkTl9Efwg+YO68zWfi1P2IUU8z4PbcoUsSpL7h0dxwiGkCMIYg063t/0daPBfgiSpvzSgP3gTzTSBIsfGiMikRARgAyc68iaboDJbAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Terminat'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights" CvElementArea="1423, 972, 136, 45" CvTextArea="1452, 985, 76, 17" CvTextArgument="Terminat" CvType="Button" DesignTimeRectangle="1455, 981, 74, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Terminat' parentid='ow84' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Terminat' parentid='ow84' tag='SPAN' type='' class='VfPpkd-vQzf8d' check:innerText='Terminat' /&gt;" Guid="ec3a80fa-6bcd-4a0e-9e4b-e61829dbda70" InformativeScreenshot="c08faebaa4f1e6d5ad6bac4c39cc2972.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zboruri Google – Găsește zboruri ieftine și urmărește prețurile' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvElementArea="1423, 972, 136, 45" CvTextArea="1452, 985, 76, 17" CvTextArgument="Terminat" CvType="Button" DesignTimeRectangle="1425, 974, 134, 40" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Terminat. ' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Terminat. ' tag='BUTTON' type='' class='VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-dgl2Hf nCP5yc AjY5Oe DuMIQc LQeN7 z18xM rtW97 Q74FEc dAwNDc' aaname='Terminat' check:innerText='Terminat' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Caută'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights?tfs=CBwQARopEgoyMDI0LTA0LTI0agwIAhIIL20vMHAyZ3FyDQgDEgkvbS8wOTk0OW1AAUgBcAGCAQsI____________AZgBAg&amp;tfu=KgIIAw" CvElementArea="892, 893, 132, 56" CvTextArea="949, 911, 52, 16" CvTextArgument="Cauta" CvType="Button" DesignTimeRectangle="951, 907, 50, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Caută' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Caută' tag='SPAN' type='' class='VfPpkd-vQzf8d' check:innerText='Caută' /&gt;" Guid="ceae12d3-78ba-4c95-b61c-cc9026bad2c6" InformativeScreenshot="994547c1d19b281477febb942534093d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zboruri Google – Găsește zboruri ieftine și urmărește prețurile' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvElementArea="892, 893, 132, 56" CvTextArea="949, 911, 52, 16" CvTextArgument="Cauta" CvType="Button" DesignTimeRectangle="896, 895, 125, 50" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Caută' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Caută' tag='BUTTON' type='' class='VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-Bz112c-M1Soyc nCP5yc AjY5Oe LQeN7 TUT4y zlyfOd' aaname='Caută' check:innerText='Caută' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NTakeScreenshot DisplayName="Take Screenshot '18:3518:35  dum., 5'" FileName="screenshot_departure_flight.png" FileNameMode="None" sap:VirtualizedContainerService.HintSize="353.6,273.6" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_3" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Version="V3">
+                  <uix:NTakeScreenshot.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights/search?tfs=CBwQAhojEgoyMDI0LTA1LTA1agcIARIDSVNUcgwIAxIIL20vMHAyZ3FAAUgBcAGCAQsI____________AZgBAg" DesignTimeRectangle="320, 700, 1278, 93" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;div' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='yR1fYc' tag='DIV' aaname='' /&gt;" Guid="3767711f-55fd-4f23-b91b-ac0da48e6cd4" ImageBase64="" InformativeScreenshot="1a8092b4f87638dd40314e711037adcf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Istanbul – Cluj-Napoca | Zboruri Google' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                          <uix:Target CvElementArea="1536, 729, 33, 31" CvType="ArrowButton" DesignTimeRectangle="1536, 728, 34, 32" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;svg' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' class='SadNne NMm5M' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                          <uix:Target CvTextArea="316, 597, 257, 22" CvTextArgument="Cele mai bune zboruri" CvType="Text" DesignTimeRectangle="316, 597, 257, 22" ElementType="Text" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTakeScreenshot.Target>
+                </uix:NTakeScreenshot>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '18:0518:05  mie., 24'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights/search?tfs=CBwQAhopEgoyMDI0LTA0LTI0agwIAhIIL20vMHAyZ3FyDQgDEgkvbS8wOTk0OW1AAUgBcAGCAQsI____________AZgBAg" DesignTimeRectangle="320, 777, 1278, 93" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;div' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='yR1fYc' tag='DIV' aaname='' /&gt;" Guid="512e593f-4b9c-48f0-a851-fb535c40c9ac" InformativeScreenshot="0609d7da57c345b9c746fbb0cb3e2b26.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cluj-Napoca – Istanbul | Zboruri Google' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                          <uix:Target CvElementArea="1536, 807, 33, 30" CvType="ArrowButton" DesignTimeRectangle="1544, 817, 17, 11" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;svg&amp;gt;path' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='path' class='' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                          <uix:Target CvTextArea="316, 675, 257, 22" CvTextArgument="Cele mai bune zboruri" CvType="Text" DesignTimeRectangle="316, 675, 257, 22" ElementType="Text" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continuă'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights/booking?tfs=CBwQAhprEgoyMDI0LTA0LTI0Ih8KA0NMShIKMjAyNC0wNC0yNBoDV0FXKgJMTzIDNjU0Ih8KA1dBVxIKMjAyNC0wNC0yNBoDSVNUKgJMTzIDMTM3agwIAhIIL20vMHAyZ3FyDQgDEgkvbS8wOTk0OW1AAUgBcAGCAQsI____________AZgBAg&amp;tfu=CnRDalJJVVUwd01rWXdSbU0wZVVsQlJYSTRVVUZDUnkwdExTMHRMUzB0ZDJaaWFXWXlNa0ZCUVVGQlIxbGxWVGx6UlRkcVZVRkJFZ3RNVHpZMU5IeE1UekV6TnhvTENPU0tCUkFDR2dOU1QwNDRISENGaXdFPRICCAAiAA" CvElementArea="1332, 747, 240, 47" CvTextArea="1411, 761, 77, 17" CvTextArgument="Continua" CvType="Button" DesignTimeRectangle="1414, 757, 75, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Continuă' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Continuă' tag='SPAN' type='' class='VfPpkd-vQzf8d' check:innerText='Continuă' /&gt;" Guid="2453cd03-65f6-4319-ba62-43b1c79619be" InformativeScreenshot="09115b792439bcbb6a512dc2bb82232e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dus către Istanbul | Zboruri Google' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                          <uix:Target CvElementArea="1332, 747, 240, 47" CvTextArea="1411, 761, 77, 17" CvTextArgument="Continua" CvType="Button" DesignTimeRectangle="1335, 750, 233, 40" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Continuă să rezervi la compania aeriană LOT pentru 831 lei român*' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Continuă să rezervi la compania aeriană LOT pentru 831 lei român*' tag='BUTTON' type='' class='VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-INsAgc VfPpkd-LgbsSe-OWXEXe-dgl2Hf Rj2Mlf OLiIxf PDpWxe P62QJc LQeN7 my6Xrf wJjnG dA7Fcf vPFbnc nN1Cud' aaname='Continuă' check:innerText='Continuă' /&gt;" SearchSteps="FuzzySelector, CV" />
+                          <uix:Target CvTextArea="316, 664, 262, 28" CvTextArgument="Optiunile de rezervare" CvType="Text" DesignTimeRectangle="319, 662, 1280, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;h2' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='H2' class='n9rd7b ZSxxwc' aaname='Opțiunile de rezervare' check:innerText='Opțiunile de rezervare' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="url" DisplayName="Get Attribute 'Opțiunile de rezervare'" sap:VirtualizedContainerService.HintSize="353.6,248" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" Result="[departure_flight_link]" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Version="V3">
+                  <uix:NGetAttributeGeneric.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights/booking?tfs=CAIQAhprEgoyMDI0LTA0LTI0Ih8KA0NMShIKMjAyNC0wNC0yNBoDV0FXKgJMTzIDNjU0Ih8KA1dBVxIKMjAyNC0wNC0yNBoDSVNUKgJMTzIDMTM3agwIAhIIL20vMHAyZ3FyDQgDEgkvbS8wOTk0OW1AAUgBcAGCAQsI____________AZgBAg&amp;source=flre_fli_share&amp;utm_campaign=sharing" CvElementArea="1332, 747, 240, 47" CvTextArea="1411, 761, 77, 17" CvTextArgument="Continua" CvType="Button" DesignTimeRectangle="1335, 750, 232, 40" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;div' isleaf='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DIV' class='VfPpkd-Jh9lGc' aaname='' /&gt;" Guid="f9f68e0c-a4a4-4bb0-87ba-ee250fd1750a" InformativeScreenshot="b042b5c2b20f9a43816bc8e6dd0a2e31.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dus către Istanbul | Zboruri Google' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvTextArea="316, 664, 262, 28" CvTextArgument="Optiunile de rezervare" CvType="Text" DesignTimeRectangle="319, 662, 1280, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;h2' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='H2' class='n9rd7b ZSxxwc' aaname='Opțiunile de rezervare' check:innerText='Opțiunile de rezervare' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NGetAttributeGeneric.Target>
+                </uix:NGetAttributeGeneric>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,168.8" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Trace" Message="[&quot;Successfully worked with departure flight&quot;]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:LogMessage>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-9, -9, 1938, 1168" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="5fffd3257317b676a00267d8b223dad3.jpg" Selector="&lt;html app='chrome.exe' title='Zboruri Google – Găsește zboruri ieftine și urmărește prețurile' /&gt;" Title="Zboruri Google – Găsește zboruri ieftine și urmărește prețurile" Url="https://www.google.com/travel/flights" />
+          </uix:NApplicationCard.TargetApp>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </uix:NApplicationCard>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="452.8,213.6" sap2010:WorkflowViewState.IdRef="Catch`1_8">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="Error" Message="[&quot;Exception thrown during web browser process&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="548.8,3440.8" sap2010:WorkflowViewState.IdRef="TryCatch_9">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Extract Arrival Flight" sap:VirtualizedContainerService.HintSize="449.6,2875.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="d68d681a-a7f7-422a-99f0-f677d375cdd1" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,2618.4" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="sd:DataTable" Name="departure_flight_details" />
+                  <Variable x:TypeArguments="x:String" Name="miau" />
+                  <Variable x:TypeArguments="x:String" Name="departure_flight_time" />
+                  <Variable x:TypeArguments="x:String" Name="departure_flight_price" />
+                  <Variable x:TypeArguments="x:String" Name="miauu" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'SPAN'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Text="[arrival_location + &quot;[k(Enter)]&quot;]" Version="V3">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights" DesignTimeRectangle="385, 742, 17, 16" DesignTimeScaleFactor="1.25" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='ow60' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ow60' tag='path' type='' class='' aaname='' /&gt;" Guid="97732e9d-4360-4df6-a3ca-82ae7f645039" InformativeScreenshot="b5417ee82f74717772e6ca689be97352.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zboruri Google – Găsește zboruri ieftine și urmărește prețurile' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvTextArea="402, 672, 82, 17" CvTextArgument="Dus-intors" CvType="Text" DesignTimeRectangle="359, 660, 171, 45" FullSelectorArgument="&lt;webctrl class='VfPpkd-woaZLe' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='VfPpkd-woaZLe' tag='SPAN' type='' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Text="[departure_location + &quot;[k(Enter)]&quot;]" Version="V3">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights?tfs=CBwQARoOagwIAxIIL20vMDk2Z20aDnIMCAMSCC9tLzA5NmdtQAFIAXABggELCP___________wGYAQE&amp;tfu=KgIIAw" CvTextArea="796, 805, 56, 17" CvTextArgument="Unde?" CvType="Text" DesignTimeRectangle="721, 780, 353, 70" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-label='Unde? ' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Unde? ' tag='INPUT' type='text' class='II2One j0Ppje zmMKJ LbIaRd' placeholder='Unde?' aaname='' /&gt;" Guid="82ce0f72-d128-42dc-9970-5fc2ca28d5a0" InformativeScreenshot="066f90e5e0431898936038d390e7978e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zboruri Google – Găsește zboruri ieftine și urmărește prețurile' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="751, 800, 30, 30" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;svg' parentid='i21' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='i21' tag='svg' class='IILp3 oTFJue LKTCxe NMm5M' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Dus-întors'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights?tfs=CBwQARodagwIAhIIL20vMHAyZ3FyDQgDEgkvbS8wOTk0OW0aHWoNCAMSCS9tLzA5OTQ5bXIMCAISCC9tLzBwMmdxQAFIAXABggELCP___________wGYAQE&amp;tfu=KgIIAw" CvElementArea="746, 493, 27, 29" CvType="ArrowButton" DesignTimeRectangle="755, 504, 12, 6" DesignTimeScaleFactor="1.25" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;svg' parentid='ow79' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='ow79' tag='svg' class='VfPpkd-t08AT-Bz112c-Bd00G' aaname='' /&gt;" Guid="7a39d6a2-82db-426d-82f9-e1d0f94507c7" InformativeScreenshot="cb1ccf7fc80e722df9dd37fe1eb35c7d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zboruri Google – Găsește zboruri ieftine și urmărește prețurile' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvTextArea="636, 496, 93, 20" CvTextArgument="Dus-intors" CvType="Text" DesignTimeRectangle="638, 489, 93, 35" ElementType="Text" FullSelectorArgument="&lt;webctrl id='i33' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='i33' tag='SPAN' type='' class='VfPpkd-uusGie-fmcmS' aaname='Dus-întors' check:innerText='Dus-întors' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Doar dus'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights?tfs=CBwQARodagwIAhIIL20vMHAyZ3FyDQgDEgkvbS8wOTk0OW0aHWoNCAMSCS9tLzA5OTQ5bXIMCAISCC9tLzBwMmdxQAFIAXABggELCP___________wGYAQE&amp;tfu=KgIIAw" CvTextArea="671, 627, 83, 18" CvTextArgument="Doar dus" CvType="Text" DesignTimeRectangle="618, 607, 173, 60" DesignTimeScaleFactor="1.25" ElementType="ListItem" FullSelectorArgument="&lt;webctrl aria-role='option' parentid='ow79' tabindex='-1' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='option' parentid='ow79' tabindex='-1' tag='LI' type='' class='MCs1Pd UbEQCe VfPpkd-OkbHre VfPpkd-OkbHre-SfQLQb-M1Soyc-bN97Pc VfPpkd-aJasdd-RWgCYc-wQNmvb  ib1Udf VfPpkd-rymPhb-ibnC6b VfPpkd-rymPhb-ibnC6b-OWXEXe-SfQLQb-M1Soyc-Bz112c VfPpkd-rymPhb-ibnC6b-OWXEXe-SfQLQb-Woal0c-RWgCYc' aaname='' check:innerText='Doar dus' /&gt;" Guid="58ac6014-38d7-4139-adb2-dd0802ebe57e" InformativeScreenshot="25e6d8b50456a598cdc081eaced8997a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zboruri Google – Găsește zboruri ieftine și urmărește prețurile' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvTextArea="671, 627, 83, 18" CvTextArgument="Doar dus" CvType="Text" DesignTimeRectangle="671, 627, 83, 18" ElementType="Text" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Text="[arrival_date + &quot;[k(Enter)]&quot;]" Version="V3">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights?tfs=CBwQARodagwIAhIIL20vMHAyZ3FyDQgDEgkvbS8wOTk0OW0aHWoNCAMSCS9tLzA5OTQ5bXIMCAISCC9tLzBwMmdxQAFIAXABggELCP___________wGYAQE&amp;tfu=KgIIAw" CvTextArea="1152, 805, 68, 17" CvTextArgument="Plecare" CvType="Text" DesignTimeRectangle="1154, 781, 172, 68" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-label='Plecare' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Plecare' tag='INPUT' type='text' class='TP4Lpb eoY5cb j0Ppje' placeholder='Plecare' aaname='' /&gt;" Guid="02938ca8-cae3-4008-9713-b91bfd7c9f63" InformativeScreenshot="0a056009c2c3d673f7c17f1887c1be6d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zboruri Google – Găsește zboruri ieftine și urmărește prețurile' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvElementArea="1112, 796, 32, 33" CvType="Icon" DesignTimeRectangle="1114, 799, 30, 30" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='ow79' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ow79' tag='svg' type='' class=' NMm5M' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAE/SURBVFhH7ZfLasJAFIb7pq20xQtIcVVwo+Cib1C66DvUtm4UfAJFUAomXrqpaV146WpKNjl6xknB8YRMkqnEMh/8iwxz/vlgSCBnkBKMiMxpiQwtG56eX3lU8ffjrApKIlh4fpnjUcXfryqffhF7NIZq7Q4urvK/pXGDHdg1nkxF+yGkCGM/kC3ckKVJki+WwHVdcco+pMhk+k4W6Qh2U5AieC1UiY4EvUVGRCZUpNlq8+EkwY5YIpY9Ch2MAnZoFfmYOTBzPsXTDpU1rSKLxZJ/mDDr9XektT8RyVwXYLlaRVqLLTK0gq/GIa4hbE27SFyMiMx/EAkfjIIRkTl9Efwg+YO68zWfi1P2IUU8z4PbcoUsSpL7h0dxwiGkCMIYg063t/0daPBfgiSpvzSgP3gTzTSBIsfGiMikRARgAyc68iaboDJbAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Terminat'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights" CvElementArea="1423, 972, 136, 45" CvTextArea="1452, 985, 76, 17" CvTextArgument="Terminat" CvType="Button" DesignTimeRectangle="1455, 981, 74, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Terminat' parentid='ow84' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Terminat' parentid='ow84' tag='SPAN' type='' class='VfPpkd-vQzf8d' check:innerText='Terminat' /&gt;" Guid="ec3a80fa-6bcd-4a0e-9e4b-e61829dbda70" InformativeScreenshot="c08faebaa4f1e6d5ad6bac4c39cc2972.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zboruri Google – Găsește zboruri ieftine și urmărește prețurile' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvElementArea="1423, 972, 136, 45" CvTextArea="1452, 985, 76, 17" CvTextArgument="Terminat" CvType="Button" DesignTimeRectangle="1425, 974, 134, 40" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Terminat. ' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Terminat. ' tag='BUTTON' type='' class='VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-dgl2Hf nCP5yc AjY5Oe DuMIQc LQeN7 z18xM rtW97 Q74FEc dAwNDc' aaname='Terminat' check:innerText='Terminat' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Caută'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights?tfs=CBwQARopEgoyMDI0LTA0LTI0agwIAhIIL20vMHAyZ3FyDQgDEgkvbS8wOTk0OW1AAUgBcAGCAQsI____________AZgBAg&amp;tfu=KgIIAw" CvElementArea="892, 893, 132, 56" CvTextArea="949, 911, 52, 16" CvTextArgument="Cauta" CvType="Button" DesignTimeRectangle="951, 907, 50, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Caută' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Caută' tag='SPAN' type='' class='VfPpkd-vQzf8d' check:innerText='Caută' /&gt;" Guid="ceae12d3-78ba-4c95-b61c-cc9026bad2c6" InformativeScreenshot="994547c1d19b281477febb942534093d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zboruri Google – Găsește zboruri ieftine și urmărește prețurile' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvElementArea="892, 893, 132, 56" CvTextArea="949, 911, 52, 16" CvTextArgument="Cauta" CvType="Button" DesignTimeRectangle="896, 895, 125, 50" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Caută' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Caută' tag='BUTTON' type='' class='VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-Bz112c-M1Soyc nCP5yc AjY5Oe LQeN7 TUT4y zlyfOd' aaname='Caută' check:innerText='Caută' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NTakeScreenshot DisplayName="Take Screenshot 'Cele mai bune zboruri'" FileName="screenshot_arrival_flight.png" FileNameMode="None" sap:VirtualizedContainerService.HintSize="353.6,273.6" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_2" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Version="V3">
+                  <uix:NTakeScreenshot.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights/search?tfs=CBwQAhojEgoyMDI0LTA1LTA1agcIARIDSVNUcgwIAxIIL20vMHAyZ3FAAUgBcAGCAQsI____________AZgBAg" DesignTimeRectangle="320, 700, 1278, 93" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;div' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='yR1fYc' tag='DIV' aaname='' /&gt;" Guid="cb4d7c2a-6608-40b3-8f5c-afad4d32f6e2" ImageBase64="" InformativeScreenshot="a433bdb0ca0ed122f190c79f68b45fb1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Istanbul – Cluj-Napoca | Zboruri Google' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                          <uix:Target CvElementArea="1536, 729, 33, 31" CvType="ArrowButton" DesignTimeRectangle="1538, 730, 30, 30" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;svg' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' class='SadNne NMm5M' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                          <uix:Target CvTextArea="316, 597, 257, 22" CvTextArgument="Cele mai bune zboruri" CvType="Text" DesignTimeRectangle="316, 597, 257, 22" ElementType="Text" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTakeScreenshot.Target>
+                </uix:NTakeScreenshot>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '18:0518:05  mie., 24'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights/search?tfs=CBwQAhopEgoyMDI0LTA0LTI0agwIAhIIL20vMHAyZ3FyDQgDEgkvbS8wOTk0OW1AAUgBcAGCAQsI____________AZgBAg" DesignTimeRectangle="320, 777, 1278, 93" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;div' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='yR1fYc' tag='DIV' aaname='' /&gt;" Guid="512e593f-4b9c-48f0-a851-fb535c40c9ac" InformativeScreenshot="0609d7da57c345b9c746fbb0cb3e2b26.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cluj-Napoca – Istanbul | Zboruri Google' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                          <uix:Target CvElementArea="1536, 807, 33, 30" CvType="ArrowButton" DesignTimeRectangle="1544, 817, 17, 11" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;svg&amp;gt;path' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='path' class='' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                          <uix:Target CvTextArea="316, 675, 257, 22" CvTextArgument="Cele mai bune zboruri" CvType="Text" DesignTimeRectangle="316, 675, 257, 22" ElementType="Text" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continuă'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d68d681a-a7f7-422a-99f0-f677d375cdd1" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.google.com/travel/flights/booking?tfs=CBwQAhprEgoyMDI0LTA0LTI0Ih8KA0NMShIKMjAyNC0wNC0yNBoDV0FXKgJMTzIDNjU0Ih8KA1dBVxIKMjAyNC0wNC0yNBoDSVNUKgJMTzIDMTM3agwIAhIIL20vMHAyZ3FyDQgDEgkvbS8wOTk0OW1AAUgBcAGCAQsI____________AZgBAg&amp;tfu=CnRDalJJVVUwd01rWXdSbU0wZVVsQlJYSTRVVUZDUnkwdExTMHRMUzB0ZDJaaWFXWXlNa0ZCUVVGQlIxbGxWVGx6UlRkcVZVRkJFZ3RNVHpZMU5IeE1UekV6TnhvTENPU0tCUkFDR2dOU1QwNDRISENGaXdFPRICCAAiAA" CvElementArea="1332, 747, 240, 47" CvTextArea="1411, 761, 77, 17" CvTextArgument="Continua" CvType="Button" DesignTimeRectangle="1414, 757, 75, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Continuă' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Continuă' tag='SPAN' type='' class='VfPpkd-vQzf8d' check:innerText='Continuă' /&gt;" Guid="2453cd03-65f6-4319-ba62-43b1c79619be" InformativeScreenshot="09115b792439bcbb6a512dc2bb82232e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dus către Istanbul | Zboruri Google' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                          <uix:Target CvElementArea="1332, 747, 240, 47" CvTextArea="1411, 761, 77, 17" CvTextArgument="Continua" CvType="Button" DesignTimeRectangle="1335, 750, 233, 40" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Continuă să rezervi la compania aeriană LOT pentru 831 lei român*' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Continuă să rezervi la compania aeriană LOT pentru 831 lei român*' tag='BUTTON' type='' class='VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-INsAgc VfPpkd-LgbsSe-OWXEXe-dgl2Hf Rj2Mlf OLiIxf PDpWxe P62QJc LQeN7 my6Xrf wJjnG dA7Fcf vPFbnc nN1Cud' aaname='Continuă' check:innerText='Continuă' /&gt;" SearchSteps="FuzzySelector, CV" />
+                          <uix:Target CvTextArea="316, 664, 262, 28" CvTextArgument="Optiunile de rezervare" CvType="Text" DesignTimeRectangle="319, 662, 1280, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;h2' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='H2' class='n9rd7b ZSxxwc' aaname='Opțiunile de rezervare' check:innerText='Opțiunile de rezervare' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NGetUrl CurrentUrl="[arrival_flight_link]" DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="353.6,127.2" sap2010:WorkflowViewState.IdRef="NGetUrl_1" Version="V3" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,168.8" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Trace" Message="[&quot;Successfully worked with arrival flight&quot;]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:LogMessage>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-9, -9, 1938, 1168" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAABqQSURBVHhe7ZwJcNTXfceV2rr30OpGAhNz29g0nnQy7TSZnmknnU5SN0dnMm3qOmkyTSaJx8lkktgxxGDqGCNAoPvalYRAwoCDHbBNbQwYIQlJgCQkdOyle1e3EE7cGf9ff7/3f//V27fvv4cODldv5ju7rLRi9/N5/997//c/olbaSltpK22lrbR7sWUU2R/fYHV8Y4vNvX1LlatmS6Wr/lGbu+fRSvfAI1Wu0Ueq3AoGXh/dYnMNbLE5ezbaXPWQw5tszu0PVzi+binoe4z9uZUWqiHwR6zun22tcp55rMo1s8HqUlaXOZX0EoeSWuSfFC7JhXZfLCzJRXYls9ShrC13KpttzhnI6fXlrp9a4P9g/91Kw5ZWaN/4iM39ymPV7v6NAHxVKQAvdihpQsIVwEvAJBXMB3/3IVWIe0O582VTXt8G9jH+n7U68sAmm+M7j1e5r2yqdCuZ0MMzADKC5xNMAi9AlMALECWYWZLg9bUVLmWj1dm4ptT+NH4m9uk+uW1r3Y2YzVb3jx6vdrmxJ2rgtUQiQJQQqQAtJkgavH+DzelaU+L6QVRRczT7uJ+stsnq/O626v6R1Qw8n3AlhCtAlMALECWgAC34d9ZbXcOryxzfZh/7/m+rSxzbtlW5GnAwXAWwMQsVIErgBYgSFiIAY8y307+9vtxZf38P2DvOPbjV1n/wkUrX/2bBwKrBl0ngBYgS7oYALatLHR89VOLch9+Ffav7o2WXDK7eVtV/HaeQCD+UAFFCuAJECXoCRAm8AFECL8AAwdfWVbiuJhzsz2Jf795uj1a7vrS1yj2dzcDzWYgAUcKdFqBlTZlzelWR4+/Y17w322dq3M/AIKYg/FACRAn3ugBMKuzcrbU6fsC+7r3VPls7uPPTMK/W4Msk3O8CEvP66P7Duir3dva1734jhHzqc0f78x8qV5cNMJ9kARj8vY02936G4O62P6kdOLSm1ElWcwHwvmSVOPwC4H3JLJ4PgPcLgPcFdpR8Aeh+SSm0+wLgfbEU+AfA+wLQ/WLKnw+A98WQ1+cXgO+LxTpMNp25fXe3hCeODO7EPVo9+KIAHv79LADhG4/PKZjNpz98huG4s23bYfeP12plB0AvpQAe/r0mAOGbAHzia2rMJ+aU9W/MfYthuTMNp5ragKsJEMFjePifBAEafAODr8UCEta8/vsvMDzL27LK+9ZssrroPJ9LxAJ4+PeDgGTbPHxRACbj5NxUYt1cJsO0PO2zRc3Rj9pcVwEuD18qIBj8SATw8EUBPPzlFIDwsdRo8EUBCSyr37jdHHWOLN+yxeZK9wFtSgmQpQJE8FrChb8cAnj4ogAevkyADL6eAEz2ybm9DNfStuxCxx8/XO6kC2sBYZD1wsMPJYCHLwrg4d8JARp8nO2EKyDp+IcfWermln4VdaPVdVkKHwNQZRHBh4IvCuDhhxLAw49YQJ6WPmJkSbEOETOA16ab4QrAZLz+4QcM29K0h8sc/5lVOr8HG44AHroWEb4ogIcfSgAPXxTAwxcF8PDNAH99mZPsrveQC85JMjo5S3o90+Tb73qI5fgtxQgwjccg8BiugHj4fXxMPjH3Hwzf4hoeRlxvdQ4BQL9lBC2aAHgeNKHghxLAw1+0AACfWdRHilq9xDs1QyanpvzSNTxBzNWTiqluVjEdU0UY4FEGXyYAk3ri9mBUEVn84c2Hra4fAEApfC5S6FoWCz+UAB6+KICHTwUA/C8cdZEbI9MB4LW4PBMkOd+pmKsmfBKoACYhHAEYy+u3v8cwLrDVkQfWVThd2oIZwNSLFDxmIfBDCeDhiwJ4+AECAP6XTwyQgXF9+JjfdXpJyiGHkpzvAgnjVIKxLnIBySc/dCBDRjPytrbC/jS/YskH4OoKkEHXIsKXCQgGf8ECGPzBEPAxz74zoCTn9iopB0FCgUsxQTky1s5KBfDwRQFxkKRji1im+HSZo0kGPyAALZwsN3xRgB/8k+HBd4xMkE/n9yjJ+3uV5IN2JQW2Akthv2I6POkrQ5EIsJz48DLDGVlLLbZvyipxfgyQ5ND5ALhgobABnl/gNRH+YgXw8H0CGPyhMOBjXny3n6Tk3FRS9vepAvKcVEBS8aBiPDqpJAYRwMPXBCQem/s4tm4m8jPwHip17kb4fKTwMQBOlnng9oCk+wLgWdIKFw5fKiBC+Oe7PWT1vi4lZW+PKiDXriQfcilJBW4qwFw6pBiOTIUlAOFrSTp5+0WGNfy2pszpFAXohcLmUtQyRoZhTt00MElqb4yTlxtGyb+cGiCby+HnAMoXTkQa/JtPKsjwSwgBi4XfNzROtuXdVNL2Qu/P6VYFwEBsyQMBReoWYC4bVkwQw5GZAPhBBRyHwTiSlp7v2AblgB4O1CCHiA9+XouXTE37f2n89/TMDJmZnSV9sKPzbu8EqbjmJT95b4h86ZibrCroJekFfRCQAUkFoL6wf6fAz9Xgc4COgdflAvrIl1+XwJ/knnNxjU6Qvy7rVtJe7VRSUcA+EADlhwrA3o8lqGQI4EPKR2lQQrgCYiERLU9kF7ue1QTw4YCL8Qn4ap2dXOzxSL+oGE3MxMwsuTY4SU51jZN9jR7yvbcGyWdsUIYAJCY1X40mIRkD/6aPEATuC7z+5ZP9YcN3I/xy6Pl7uljvh/JzoE+x4AwIBuCkQrX8JEH5MZWNqAIqMB4l8ei0FL5MgOG1Wz9ieEO37BLHGzIBYkQB8BotJ1mvtpPvHOkk11xe6ZcOFRSDW8vQ+Ay56Jwgh9u85MUPRsg/HXeRtbAHm5LfC8FHfwH4/CsnIoRfhvBvQO/vgt6PpQdmQNj7YUdM7f0D0Puh/JT7wzeyaBL04GsCjMduvc7whmiEfAoETIqwQ2R+JsNqelZOO3l4ZxN59ngX1NcJFYIOiHDCl7Gu4Snyds84KW7xkB+eHSJ/dcRJkg/1gKDI4P+ND36nkkZnPjD1hIHXkqfO/5OKAD72fqj7Zuz9DL5PgJVJqJ0JLeC1uQlkyyjrt+Ti3q38aSAYDrReAgRkFPbRLSEbJGza1UB2vtlD+j3j8yIWIYOPJsY7NUs8k9y6TpD/QwY/lYdPSw8OvCCgdCQAPhXA4BusY0oiJOHovAQRvpaYE7ceYZj1G0wrvyYK4MNB5xMggA6qeb1k1Z7rJPvXjSR7RwN57KUGknu2j3jGuS2CjwTWghLk7+nCPwDwcfkBer4FZz3Y+0uh50PpMQeBTwXY1KAEHr4oIL7uwycZZv0G8+/nZOCDBqaIvuBcHmYidEYDNTo9r4esegUk7GgkWdsvk6xfXSaf+00DsX3gIOMTk/4C+EjghZUg79eDn6IHH0sP1n4OvkmAb2DwEyvVxAsSeAExdXM/Z5j1G/TiSphz07POpLBlEQXAtBBDJcBWQLcEkJAFElZtryerXkAR9eQvc5rIqZZ+f/B6kQANSJDfDRc+FcDBNwvw8VEPfmLVhJJQOa7E184GwMck1M1VMMz6LbPYflETwEcKXgsvIEACTCVBQBoMkplUQgNZhaESLpHs5y+Rr+S3kvOdQ/7Ag0UEHOxnEPfoOMCHaaYEPs71FwqfChDgJ1Ti4wSVIAoAKe8zzPotvaivQyYgWBA6PPqH7sGqO1FYktKgHKGITBgTsmBMwK0h84V6kgkladXz9STrlxfJt8quklY77EPwQENkCgDLosEfgJ7/tyWdSvpvED5kL0w3deBbBPhmBl2DbwwCXxXAgs+rJpW4unkJUH6UmNfmrjPM+i2l2O5CqBEmUABGkwACVBGqhAzYEjJ/3QRbApakBlUEbAkoYs0vL5Af1rST7gHYh5AAFyODr2VsbJyc++AayXy5nQpIx96/j63zLBK+IQT8+Go1mgQUEFd3O/SSRGqRfYw/4xhAhhO5AC1MBO7FpmJga8iALSHzxSZVBEjAZNAt4hLJfO4Sefj5D8j217uIa0SYugqRgccg/PMXW8mZtxvI5/Oug4AO2AJY6YHpJl1m5uDTuT4Hnwrg4FMBHHwqgMH3CWDwEzT4h6doYmpvUQGxdXNehlm/Aag/8ALEAFBZpODFxTN1HUddTqASXm0DCVdIBkjI2AEyUAIGylImbA0Zz9WTzTsukVfPdJPRcfmMKSj8ty6Tt95pJE9Zryppv+lUUqH2pxzoVVIPOZXkQhBQ6F52+JjYw9OahN8zzPotlABpRNDBQiVg1KWDdNhZy6ASNBGNsCVgLpOM59X8fV4rncUECNCB//6Fefjv/E8j2VHbTFJfuaGk4iJbLsz581xq+SkdovCTBPhmmz98owDfwMGnAjj4GB5+XM20ElvDJBwNQ0ByoX0MIgetFxlonfhWMEGCGhgX9oKEnSDAJwIEwBaRsb2R/Nm+VtI3LOn9AFsUMDY2QeGffqsB4F+m8N89d4WUn24lqTADStkHJSgXaj/u7RYP+gTcCfix8Dzu8PQYw6zfAIoLBYiRgtfCAZYF3q8fJiF1TwdJ39nMRMAjyHj8lRZyo18yBjD4vACt54vwz19sJr87jwI6YAuAATi3T0nB3k8FYOkZjQi+n4Bqf/jxAvy4I/PwqYCaGSfDrN8ARjuACRAQInK4YYRfx0/Ze4Ok72oBCc1k3X83kya7ZCbEwdcEBIP/QX0Ludx4jazLVZeak+mBdqj9JbC3Wwalx8oEAHx85OFTAUHgJzLw4cCPPTID48B0G8Os3yx5fRcBjAxysEjh6oWHLibl1U6SvbuZvNcp2R8Q4GP8B1wJ/IZW0njlGvlHK5agHnWvFwffElzlxNoPWQL4PgEMvlp+5uHT1EyfZ5j1W1J+n028wA2ghYoUNB8ZbHn6yIn28OA7YYr63vkWFf5ZdcCVwW9uuU5+eryDJNP5P35eXOnEgywwAFtRwmgAfKMA3wClZjHwY47OKjFHpkIvRVgKHM+JAoIF4FIBcpjhB4/hgnxSepU7iBMEftfAGPnzohvKjporvtnOezrwr15rI4febgcBMAOCKaiFjgFYgnAGNApTTm9E8BMP+8OnAjj4cUeEno/wa2eVB6tnf8Ew6zcYFL8qAx00EqDhhD9vB+G/fHmUru/LgPNpdo6RzxzqVNJfvqFs3tOmnD7b5Ae/ofGqH/xrbe3kjUvtRDvUmKQJKBmiMyBjBQhYZvg0h2/9M8Os3wyFvY8CFDlovXBQQ8UHXQuD/9P3hwFuaPjnbo6SLQdgrxbm9ekwtcT8vKYlKPzrkMZrUIIOwBigCSgaUNQDLSDAxgRI4FMBQeDHC/CpAA5+rAYfEvXa7BaGOUgj5FOWvN5JlCBGCh8DIPUC7xNg8+mjeer0IBnXKTV8fts2QtbuRfhdCh7DxYPoaTCzeehAl/LW+WbS0CCH39beQdo7Osi2km4QAFsB7AckFQ2qB9k1AQCeCggCH7NQ+PCz8A5JYrPk9ZzSoIcZf9BiONg0efPPnzw5QEYnQvd8a9MQycbFtD0QhJ/TraTux/TSY7k/rm2j8Fta26TwMd+svalYDsDnzXcpZipgmB5oN8IsaDnhY2IPT4Z5UB5aUq79GQAnA60XKfhvvjlETt2cIDmNHvKdt4fIE5UOAtNcSC9I6CV/ccRF3F7Yy5UA55Pzfj/JeIXBx14P08nU/Wyn6qBdSYWykp5nV87Wy3u+lu2/6yBJ8LvmPBAAsyATzILosV4QYKgcjwh+vAA/7qg/fFFAdNXUjxne0C1xv2ObGcBiAGQ4kcLnD5L7TjWZmCGX3ZOkps1DeoKco4+ZgLL0izNOkgZ7sRp83JtNhekkPXEKSgmuaqbku+lpJE/VdSp68DHW8x3EnAsC6BbQD2PAEBWA9V8VoMI3IHgOfkLN4uDTVN6K7P6l5oM9Dk1CGPG/9Afy0nsDpN8zIQUbTrzjk+S7J+zsKBaWHISPJQfg43Iywsc9Wtipwnl9MgyquLR8+rIcPubsFdgC4L3mPKcqoHRIMZbjGAACbKz3LwF8UUBc9VRkpyZiMx+8uQtAymDLEiDADKVm3Z6rZPfbdjKAIrQ5vSwC/KGxSfL1mp5A+DCN9IOPa/klAB72ai0wpcTnT9b1KjL4be3t5Or1DpICgzAVANJMJcPzAipBwALgUwFB4GMetE1FfnKuqdC+0Zxv/xhgyoCLCRQAAyxKSN19jWzY3Ux2v9VLDw+Ggm8fHidfrNAOnjP4OOACfDxvB0sOXcuBeTyFXzpCd6hwYc0CQHEP93j9jQD4Wj5f2QMCoAwVgAB4DxVgxfIzHhI+PkYKP7pm5uOoo9PrGdbImvlATwN/Lx0MwJVFKgAv+zQf7CXJL10jqdsbyYZdTWT3mV7SP8pWOAX4NwbGyZ8W4WAbCF87ihUAvxwCdRwPqNDnUFb+qsauaGWIh4/57sku+FxOxaRtAWUogB1gwYF3CeHTVE8v7AINbMa8nqdEAdLANDMgAJ8KOAQ50EOSd18ladubQEQTWb+zkVQ19AcIKKwfhAEX4PsG3Hn4OMjqwoe5PK7n4LICXV6ArcB6oTMAPmbPO53EdMgFAgYUUzFuAaOKgW4BqoCFwpcJiIY8UDW1iDup1JEHTLndDil0PlIBGCYAtgLz/m6SvKuVCsh8+SrZVNin9AtT0LNdHkJ7vm+2w06UhZIRWHbURTT/gykoAXau4GdPWB3K1ettAQKO1neAADd8bhAAYweWIINNFZAAvT8c+HEANhz4MZWTi7tID5v50M3/kkLnE0SAJsEEEkwHukn6vk6SBlPBlNwe5aVzg34CXJ5JQuHjWcr72Lma/NkLDD4uIQTCh8BruGdrKoNH2BIOnQvcCi60MgGwBRiL1VkQHnTB3k/PZFgC+JqAP6qaXORlqtiKmqPNB7sHjfn+91MT4nePBV9AgnbpvwkkpJYPEkvttJIMPTk116lskGwFT5RAycEDJzjoaqeJ4/o9vIc/V1P/MKKXSRhRNla4lCuwY+YnoeMGWVPmVowF0PuxBIGsRNgCEmAQpgKWCH5M1cTAklyojc2Ye/NpACoDr0UuAMMk4L0XLK/dUsx1s4oZvkwy9Ga8DHTX+0N+Ar5xAub1uG4P8NXTxAF+kVtJwhkO9Grx7IWAw4goAF6nO1jw+zvfDtwKvnQEPnOhKsAAg3ACvAfPbIjHEhQBfJkAhK/W/omluVWB1kz7b14CoDL4GDl8lhTrMEk6cVu99wJIoFefw5fC+fv6YqfihtKjCXj+vWFCez4VAKUH9nK1gyf06BUHXzx1hK5oYipxfR9er/AqWRX9yuVWfwHPvtlNjEWDigGkJpbOC0ioQQkw118k/Fjr2NLerAMbLk8Yc3s+Em/lSAM9XC/8LV9oRAmlg8quC7gUrQqwtY4SS26fkgS13wLlR71IAs9eAPjsADotMTrw6XKyzUsf6evlXuVnp7v9BBx8v5Ng/U+ELSARSlAC/B6WIFxqjoNZ0GLgx1TPfBTxskO4zbiva28kAgLg60hYax2ArWCKDI9NkX+odanw8fpc2FlSTxVHATjAskE2GHxtVRPquhFTMaYklw8r51vmBZxq7CCGIiYABCWAMK0EUQERwucFxJZ7XmW4lqHtOPegOaezJRwBuvBZtKvO8RYAxqPTyi8veCl8C+xsYc+35MOsB4/d4vVZOPOB8kMFSODLTh3BpYVEXGDDKSZI+PapXtg5UwU0Xm8nicUjUH4gMAtKgPfHw3uoAK33I0xJgsGPs3qX95Zl2OILurONB25OBxMQ7E5TfkEBdUwCzI7MuJyAgy7M0RG+GWY+ZqjTOPCaNAEcfApeBh+Xk+ExEdd3MCDBZB1VzjSpAna900VU+DADgnEiHt5LBWjlBz5PpPBjrONTUTVzGQzT8rbE/Z1fNBzs8d3KV7uhKX9fTSlwWXgJsCWYcJYDg64Zez7CZ7UfAWrwxbOUefgUPAaXFdgjrvMkgIQnTzqVXe/cJIkw80mEv0XLDwzA8XhRBZsBYe+PGD6Ie7DM+3mG5840Q07H9xMP9foJiBg+hN57AcsRjAeG2hnFAACwp+PW4IPPer94cURQ+GxhjZ46iEsMOMuB92K5obMe7PkafNhiaPmBDhArERAMfjS8J6Zw+F8ZljvbDDndLzAJYcHn77HgF03CMZCAInBwBlAI3wg9X12vAdA68H3gRfjani0AVs/hxABwhE7Bz8OPh9JD1/UBavjwZ5TootHwL8BejmbM6chJqlDvpSyFG26YBC0JKARnMUHg+4HHMPgI3u/sBfY84TDUefi9ePg9bdD1wceeL/T+oPDx38UDLzAMd7eZyod+TcHJwIYZ7ZJ/MfQoFQdfvCwoJHwM7tnWQImphhoPjxQ6rnqyQTdi+PC7MQXuHezr3xstqXL0GSwdMriyyGDrxQBAxasRRfjiWcp+8HFw1ZYXEDp7HlvDwEcAPwbeF100dHfLjl5LKvf+u3Yrl0ghy8Jf/k+PVEngi+fn8/BV0Bx8DMKWHMPVA4/xwYe/H10w/G/s696bzVg1+QVj1fiUDGg44aGLoRIQOM5oMDrwxRNllwJ+bLl36o5PNRfaEn87lwFz7FYcSGWQ+chA6wUvfkbAevDF8/N5+BR8BPA18LTeFw23Rp24lc6+3n3S6sgDhkrvPhhEP1oIbC3aJf98sK7z8H3gI4QvA4/x9XrrxEexpaM5iz6qdTdbzNHJxxLKPZf4u4mEigy6GLpuHwK+eJZyuPBxzzamZPhSVM3EVvY17v8Ge6NPwx7ocAJ8wYUA56NdfU5BS+CLF0fw8GXQMRQ8SisdHYq2eZ9mH/sT1opIdIJt/Pvx5R6XeFeRUNGgi6HgGXzxmiwevgy6L9DjY0tHXNEVnu8v2WHEe7pBTU2sHH8qvszTgIOpDDhGBlwaBL0A+LGwbxFTPNIQXeF96r6u84tpsSf/sB5K0+6EshEXLg/E1t6SQ5aE3gCDhQIX4AdAh9fjAHp8yZArpnh0d9TxP6xjH2OlYcMBO77C82x82cibCWXeaRRCB1Md6GJojwfI9II47OGw36AC90zHFg++GVsy8pOoT9LAutwtpubW1viq6a/GlHufjyv1VMWWeS7Gl3lvxpWPuuPKPSPwqKihz91x8LPospGLcSXDVTFlnl/F2ya+FlV961H251baSltpK22lrbR7qEVF/R/pN1rQN0v97AAAAABJRU5ErkJggg==" InformativeScreenshot="5fffd3257317b676a00267d8b223dad3.jpg" Selector="&lt;html app='chrome.exe' title='Zboruri Google – Găsește zboruri ieftine și urmărește prețurile' /&gt;" Title="Zboruri Google – Găsește zboruri ieftine și urmărește prețurile" Url="https://www.google.com/travel/flights" />
+          </uix:NApplicationCard.TargetApp>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </uix:NApplicationCard>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="452.8,213.6" sap2010:WorkflowViewState.IdRef="Catch`1_9">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_30" Level="Error" Message="[&quot;Exception thrown during web browser process&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="548.8,1456" sap2010:WorkflowViewState.IdRef="TryCatch_10">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <Sequence DisplayName="Send Emails" sap:VirtualizedContainerService.HintSize="512,907.2" sap2010:WorkflowViewState.IdRef="Sequence_22">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <umab:CreateHtmlContent DisplayName="Create Email HTML Content" sap:VirtualizedContainerService.HintSize="449.6,193.6" HtmlContent="[email_content]" sap2010:WorkflowViewState.IdRef="CreateHtmlContent_2">
+            <umab:CreateHtmlContent.HtmlContentArg>
+              <umabh:HtmlContentArgument FilePath="{x:Null}" HtmlBody="&lt;HTML&gt;&lt;HEAD&gt;&#xA;&lt;STYLE type=text/css&gt;&#xA;        body {&#xA;            font-family: Calibri;&#xA;        }&#xA;&#xA;        p {&#xA;            margin: 0;&#xA;        }&#xA;&#xA;        .mapping {&#xA;            background-color: #D3D4D7;&#xA;            color: black;&#xA;            padding: 1px;&#xA;        }&#xA;    &lt;/STYLE&gt;&#xA;&lt;!-- Instruct the web browser control to use IE 6 to render the page. --&gt;&#xA;&lt;META content=IE=6 http-equiv=X-UA-Compatible&gt;&lt;/HEAD&gt;&#xA;&lt;BODY&gt;&lt;FONT color=#ff00ff face=Tahoma&gt;&#xA;&lt;P style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: rgb(227,227,227) 0px solid; FONT-FAMILY: Söhne, ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, Ubuntu, Cantarell, &quot;Noto Sans&quot;, sans-serif, &quot;Helvetica Neue&quot;, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; BORDER-RIGHT: rgb(227,227,227) 0px solid; WHITE-SPACE: pre-wrap; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(227,227,227) 0px solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(13,13,13); FONT-STYLE: normal; BORDER-LEFT: rgb(227,227,227) 0px solid; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px 1.25em; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'&gt;&lt;FONT color=#ff00ff face=Cambria&gt;&lt;STRONG&gt;Hello there!&lt;/STRONG&gt;&lt;/FONT&gt;&lt;/P&gt;&#xA;&lt;P style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: rgb(227,227,227) 0px solid; FONT-FAMILY: Söhne, ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, Ubuntu, Cantarell, &quot;Noto Sans&quot;, sans-serif, &quot;Helvetica Neue&quot;, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; BORDER-RIGHT: rgb(227,227,227) 0px solid; WHITE-SPACE: pre-wrap; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(227,227,227) 0px solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(13,13,13); FONT-STYLE: normal; BORDER-LEFT: rgb(227,227,227) 0px solid; ORPHANS: 2; WIDOWS: 2; MARGIN: 1.25em 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'&gt;&lt;FONT color=#000000 face=Cambria&gt;Get ready for an unforgettable adventure as we embark on a journey to {{arrival_location}}!&lt;/FONT&gt;&lt;/P&gt;&#xA;&lt;P style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: rgb(227,227,227) 0px solid; FONT-FAMILY: Söhne, ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, Ubuntu, Cantarell, &quot;Noto Sans&quot;, sans-serif, &quot;Helvetica Neue&quot;, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; BORDER-RIGHT: rgb(227,227,227) 0px solid; WHITE-SPACE: pre-wrap; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(227,227,227) 0px solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(13,13,13); FONT-STYLE: normal; BORDER-LEFT: rgb(227,227,227) 0px solid; ORPHANS: 2; WIDOWS: 2; MARGIN: 1.25em 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'&gt;&lt;FONT color=#000000 face=Cambria&gt;Our departure from {{departure_location}} airport on {{departure_date}} marks the beginning of an extraordinary escapade filled with excitement and discovery.&lt;/FONT&gt;&lt;/P&gt;&#xA;&lt;P style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: rgb(227,227,227) 0px solid; FONT-FAMILY: Söhne, ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, Ubuntu, Cantarell, &quot;Noto Sans&quot;, sans-serif, &quot;Helvetica Neue&quot;, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; BORDER-RIGHT: rgb(227,227,227) 0px solid; WHITE-SPACE: pre-wrap; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(227,227,227) 0px solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(13,13,13); FONT-STYLE: normal; BORDER-LEFT: rgb(227,227,227) 0px solid; ORPHANS: 2; WIDOWS: 2; MARGIN: 1.25em 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'&gt;&lt;FONT color=#000000 face=Cambria&gt;From exploring hidden gems to indulging in local delicacies, our time in {{arrival_location}} promises to be nothing short of enchanting.&lt;/FONT&gt;&lt;/P&gt;&#xA;&lt;P style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: rgb(227,227,227) 0px solid; FONT-FAMILY: Söhne, ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, Ubuntu, Cantarell, &quot;Noto Sans&quot;, sans-serif, &quot;Helvetica Neue&quot;, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; BORDER-RIGHT: rgb(227,227,227) 0px solid; WHITE-SPACE: pre-wrap; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(227,227,227) 0px solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(13,13,13); FONT-STYLE: normal; BORDER-LEFT: rgb(227,227,227) 0px solid; ORPHANS: 2; WIDOWS: 2; MARGIN: 1.25em 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'&gt;&lt;FONT color=#000000 face=Cambria&gt;And as we bid farewell to this captivating destination on {{arrival_date}}, we'll carry with us cherished memories that will last a lifetime.&lt;/FONT&gt;&lt;/P&gt;&#xA;&lt;P style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: rgb(227,227,227) 0px solid; FONT-FAMILY: Söhne, ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, Ubuntu, Cantarell, &quot;Noto Sans&quot;, sans-serif, &quot;Helvetica Neue&quot;, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; BORDER-RIGHT: rgb(227,227,227) 0px solid; WHITE-SPACE: pre-wrap; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(227,227,227) 0px solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(13,13,13); FONT-STYLE: normal; BORDER-LEFT: rgb(227,227,227) 0px solid; ORPHANS: 2; WIDOWS: 2; MARGIN: 1.25em 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'&gt;&lt;FONT color=#000000 face=Cambria&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#xA;&lt;P style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: rgb(227,227,227) 0px solid; FONT-FAMILY: Söhne, ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, Ubuntu, Cantarell, &quot;Noto Sans&quot;, sans-serif, &quot;Helvetica Neue&quot;, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; BORDER-RIGHT: rgb(227,227,227) 0px solid; WHITE-SPACE: pre-wrap; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(227,227,227) 0px solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(13,13,13); FONT-STYLE: normal; BORDER-LEFT: rgb(227,227,227) 0px solid; ORPHANS: 2; WIDOWS: 2; MARGIN: 1.25em 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'&gt;&lt;FONT color=#000000 face=Cambria&gt;Here are the flights' details:&lt;/FONT&gt;&lt;/P&gt;&#xA;&lt;P style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: rgb(227,227,227) 0px solid; FONT-FAMILY: Söhne, ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, Ubuntu, Cantarell, &quot;Noto Sans&quot;, sans-serif, &quot;Helvetica Neue&quot;, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; BORDER-RIGHT: rgb(227,227,227) 0px solid; WHITE-SPACE: pre-wrap; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(227,227,227) 0px solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(13,13,13); FONT-STYLE: normal; BORDER-LEFT: rgb(227,227,227) 0px solid; ORPHANS: 2; WIDOWS: 2; MARGIN: 1.25em 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'&gt;&lt;FONT color=#000000 face=Cambria&gt;Departure:&lt;U&gt;&lt;FONT color=#3366ff&gt; &lt;/FONT&gt;&lt;/U&gt;&lt;SPAN class=mapping contentEditable=false&gt;&lt;U&gt;&lt;FONT color=#3366ff&gt;{{departure_flight_link}}&lt;/FONT&gt;&lt;/U&gt;&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/P&gt;&#xA;&lt;P style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: rgb(227,227,227) 0px solid; FONT-FAMILY: Söhne, ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, Ubuntu, Cantarell, &quot;Noto Sans&quot;, sans-serif, &quot;Helvetica Neue&quot;, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; BORDER-RIGHT: rgb(227,227,227) 0px solid; WHITE-SPACE: pre-wrap; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(227,227,227) 0px solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(13,13,13); FONT-STYLE: normal; BORDER-LEFT: rgb(227,227,227) 0px solid; ORPHANS: 2; WIDOWS: 2; MARGIN: 1.25em 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'&gt;&lt;FONT color=#000000 face=Cambria&gt;Arrival: &lt;SPAN class=mapping contentEditable=false&gt;&lt;FONT color=#3366ff&gt;&lt;U&gt;{{arrival_flight_link}}&lt;/U&gt;&lt;/FONT&gt;&lt;/SPAN&gt;&lt;/P&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;FONT face=Tahoma&gt;&#xA;&lt;P style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: rgb(227,227,227) 0px solid; FONT-FAMILY: Söhne, ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, Ubuntu, Cantarell, &quot;Noto Sans&quot;, sans-serif, &quot;Helvetica Neue&quot;, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; BORDER-RIGHT: rgb(227,227,227) 0px solid; WHITE-SPACE: pre-wrap; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(227,227,227) 0px solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(13,13,13); FONT-STYLE: normal; BORDER-LEFT: rgb(227,227,227) 0px solid; ORPHANS: 2; WIDOWS: 2; MARGIN: 1.25em 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'&gt;&lt;FONT face=Cambria&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#xA;&lt;P style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: rgb(227,227,227) 0px solid; FONT-FAMILY: Söhne, ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, Ubuntu, Cantarell, &quot;Noto Sans&quot;, sans-serif, &quot;Helvetica Neue&quot;, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; BORDER-RIGHT: rgb(227,227,227) 0px solid; WHITE-SPACE: pre-wrap; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(227,227,227) 0px solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(13,13,13); FONT-STYLE: normal; BORDER-LEFT: rgb(227,227,227) 0px solid; ORPHANS: 2; WIDOWS: 2; MARGIN: 1.25em 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'&gt;&lt;FONT face=Cambria&gt;I can't wait to share this experience with you!&lt;/FONT&gt;&lt;/P&gt;&#xA;&lt;P style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: rgb(227,227,227) 0px solid; FONT-FAMILY: Söhne, ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, Ubuntu, Cantarell, &quot;Noto Sans&quot;, sans-serif, &quot;Helvetica Neue&quot;, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; BORDER-RIGHT: rgb(227,227,227) 0px solid; WHITE-SPACE: pre-wrap; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(227,227,227) 0px solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(13,13,13); FONT-STYLE: normal; BORDER-LEFT: rgb(227,227,227) 0px solid; ORPHANS: 2; WIDOWS: 2; MARGIN: 1.25em 0px 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'&gt;&lt;FONT face=Cambria&gt;See you soon, &lt;/FONT&gt;&lt;/P&gt;&#xA;&lt;P style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: rgb(227,227,227) 0px solid; FONT-FAMILY: Söhne, ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, Ubuntu, Cantarell, &quot;Noto Sans&quot;, sans-serif, &quot;Helvetica Neue&quot;, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; BORDER-RIGHT: rgb(227,227,227) 0px solid; WHITE-SPACE: pre-wrap; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(227,227,227) 0px solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(13,13,13); FONT-STYLE: normal; BORDER-LEFT: rgb(227,227,227) 0px solid; ORPHANS: 2; WIDOWS: 2; MARGIN: 1.25em 0px 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'&gt;&lt;FONT color=#ff00ff face=Cambria&gt;Raluca&lt;/FONT&gt;&lt;/P&gt;&lt;/FONT&gt;&lt;/BODY&gt;&lt;/HTML&gt;">
+                <umabh:HtmlContentArgument.RuntimeImages>
+                  <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                </umabh:HtmlContentArgument.RuntimeImages>
+                <umabh:HtmlContentArgument.ValueMappings>
+                  <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="8">
+                    <umabh:HtmlTextValueMapping Name="arrival_location" Value="[arrival_location]" />
+                    <umabh:HtmlTextValueMapping Name="departure_location" Value="[departure_location]" />
+                    <umabh:HtmlTextValueMapping Name="departure_date" Value="[departure_date]" />
+                    <umabh:HtmlTextValueMapping Name="arrival_date" Value="[arrival_date]" />
+                    <umabh:HtmlTextValueMapping Name="departure_flight_link" Value="[departure_flight_link]" />
+                    <umabh:HtmlTextValueMapping Name="arrival_flight_link" Value="[arrival_flight_link]" />
+                  </scg:List>
+                </umabh:HtmlContentArgument.ValueMappings>
+              </umabh:HtmlContentArgument>
+            </umab:CreateHtmlContent.HtmlContentArg>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </umab:CreateHtmlContent>
+          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="Send Emails" sap:VirtualizedContainerService.HintSize="449.6,461.6" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[emails_list]">
+            <ui:ForEach.Body>
+              <ActivityAction x:TypeArguments="x:String">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:String" Name="currentEmail" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,256" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[email_content]" DisplayName="Send SMTP Mail Message" Email="ralucaianos19@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="353.6,169.6" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="True" Password="siniodkkxatihqsz" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="miau" To="[currentEmail]">
+                    <ui:SendMail.Files>
+                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                        <InArgument x:TypeArguments="x:String">screenshot_arrival_flight.png</InArgument>
+                        <InArgument x:TypeArguments="x:String">screenshot_departure_flight.png</InArgument>
+                      </scg:List>
+                    </ui:SendMail.Files>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:SendMail>
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEach.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:ForEach>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_32" Level="Trace" Message="[&quot;Successfully worked with emails&quot;]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:LogMessage>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="515.2,213.6" sap2010:WorkflowViewState.IdRef="Catch`1_10">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_31" Level="Error" Message="[&quot;Exception thrown during MAIL process&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>

@@ -1,0 +1,9 @@
+{
+  "Tags": [
+    {
+      "Key": "miau"
+    }
+  ],
+  "SeparateRuntimeDependencies": true,
+  "IncludeSources": true
+}
